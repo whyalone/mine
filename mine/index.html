@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>扫雷</title>
+	</head>
+	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="js/mine.js"></script>
+	<link rel="stylesheet" href="css/mine.css" />
+	<body>
+		<div class="set">
+			<div class="mask"></div>
+			<div class="set_warp">
+				<h2>难度设置</h2>
+				<ul>
+					<li>
+						<h3>初级</h3>
+						<input type="radio" name="dif" value="1">10个雷
+						<p>9X9平铺网格</p>
+					</li>
+					<li>
+						<h3>中级</h3>
+						<input type="radio" name="dif" value="2">40个雷
+						<p>16X16平铺网格</p>
+					</li>
+					<li>
+						<h3>高级</h3>
+						<input type="radio" name="dif" value="3">99个雷
+						<p>16X30平铺网格</p>
+					</li>
+					<li class="cus">
+						<input type="radio" name="dif" value="4">
+						<h3>自定义</h3> </br>
+
+						<span>高度(9-16):</span><input type="text" disabled name="custom"> </br>
+						<span>宽度(9-30):</span><input type="text" disabled name="custom"></br>
+						<span>雷数(10-99):</span><input type="text" disabled name="custom"></br>
+					</li>
+				</ul>
+				<div class="btn">
+					<input type="button" value="重置" />
+					<input type="button" value="确定" />
+				</div>
+			</div>
+		</div>
+		<div class="cont">
+			<div class="cont_warp">
+				<div class="cont_bar clear">
+					<div class="mine_mun"></div>
+					<div class="hint"></div>
+					<div class="game_time"></div>
+				</div>
+				<div class="main"></div>
+			</div>
+		</div>
+		<div class="game_over">
+			<div class="mask"></div>
+			<div class="set_warp">
+				<h2>游戏结束</h2>
+				<p class="result"></p>
+				<p class="time"></p>
+				
+			</div>
+		</div>
+	</body>
+
+</html>
