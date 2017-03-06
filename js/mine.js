@@ -1,4 +1,9 @@
+
+
 $(document).ready(function() {
+	
+	$('.spinner').css('display','none');
+	
 	var width = 0;
 	var heigth = 0;
 	var mine_num = 0;
